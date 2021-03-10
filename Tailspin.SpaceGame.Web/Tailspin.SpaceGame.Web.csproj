@@ -14,7 +14,7 @@
   <ItemGroup>
     <Folder Include="wwwroot\images\avatars\" />
   </ItemGroup>
-  <ItemGroup>
+   <ItemGroup>
     <Content Remove="SampleData\profiles.json" />
     <Content Remove="SampleData\scores.json" />
     <Content Remove="SampleData\profiles.json" />
