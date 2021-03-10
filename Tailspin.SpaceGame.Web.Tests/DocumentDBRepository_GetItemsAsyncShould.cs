@@ -34,7 +34,7 @@ namespace Tests
             const int PAGE = 0; // take the first page of results
             const int MAX_RESULTS = 10; // sample up to 10 results
 
-            // Form the query predicate. TEST change
+            // Form the query predicate.
             // This expression selects all scores for the provided game region.
             Expression<Func<Score, bool>> queryPredicate = score => (score.GameRegion == gameRegion);
 
