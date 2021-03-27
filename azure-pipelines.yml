@@ -5,15 +5,6 @@ variables:
   buildConfiguration: 'Release'
   releaseBranchName: 'release'
 
-schedules:
-- cron: '30 14 * * *'
-  displayName: Deploy every day at 2:30 PM
-  branches:
-    include:
-    - release
-    - master
-  always: false
-
 stages:
 - stage: 'Build'
   displayName: 'Build the web application'
@@ -105,8 +96,6 @@ stages:
 - stage: 'Dev'
   displayName: 'Deploy to the dev environment'
   dependsOn: Build
-  condition:
-      succeeded()
   jobs:
   - deployment: Deploy
     pool:
