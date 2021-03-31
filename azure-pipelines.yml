@@ -1,5 +1,8 @@
-trigger:
-- '*'
+# trigger:
+# - '*'
+pr:
+  - master
+  - develop
 
 variables:
   buildConfiguration: 'Release'
